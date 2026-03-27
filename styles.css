@@ -1,4 +1,3 @@
-/* Base Reset & Global Styles - YOUR ORIGINAL SETTINGS */
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +5,24 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* YOUR ORIGINAL COLOR VARIABLES - NO CHANGES */
 :root {
     --primary: #14213D;
     --dark: #4B5563;
     --light: #E5F4FF;
     --green: #10B981;
     --orange: #FCA311;
-    /* Utility variables for layout only - NO NEW COLORS */
+
     --border-radius: 6px;
     --shadow: 0 2px 8px rgba(0,0,0,0.1);
-    --transition: 0.3s ease;
+    --transition: 0.4s ease;
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 2rem;
     --space-lg: 4rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,7 +31,6 @@ body {
     background: var(--light);
 }
 
-/* Accessibility */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -52,7 +53,7 @@ body {
     top: 0;
 }
 
-/* Header & Navigation */
+/* Header */
 header {
     background: var(--primary);
     position: sticky;
@@ -121,7 +122,6 @@ header {
     color: var(--primary);
 }
 
-/* Mobile Menu Toggle */
 .menu-toggle {
     display: none;
     background: none;
@@ -132,21 +132,35 @@ header {
     padding: var(--space-xs);
 }
 
-/* Main Content */
+/* MAIN SECTIONS HIDDEN BY DEFAULT */
+main > section {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    margin-bottom: 0;
+}
+
+/* SHOW SECTION WHEN ACTIVE */
+main > section.active {
+    opacity: 1;
+    max-height: 5000px;
+    margin-bottom: var(--space-lg);
+}
+
 main {
     width: 90%;
     max-width: 1200px;
     margin: var(--space-md) auto;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     background: var(--primary);
     color: white;
     text-align: center;
     padding: var(--space-lg) 1rem;
     border-radius: var(--border-radius);
-    margin-bottom: var(--space-lg);
 }
 
 .hero h2 {
@@ -160,7 +174,6 @@ main {
     font-size: 1.1rem;
 }
 
-/* Buttons - YOUR COLORS */
 .btn {
     display: inline-block;
     background: var(--orange);
@@ -179,11 +192,7 @@ main {
     transform: translateY(-2px);
 }
 
-/* Section Styling */
-section {
-    margin-bottom: var(--space-lg);
-}
-
+/* Section Headings */
 section h2 {
     color: var(--primary);
     margin-bottom: var(--space-md);
@@ -210,7 +219,7 @@ strong {
     color: var(--primary);
 }
 
-/* Contact Form */
+/* Form */
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -253,6 +262,14 @@ footer {
     color: white;
     padding: var(--space-md) 0;
     margin-top: var(--space-lg);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+footer.active {
+    opacity: 1;
+    pointer-events: all;
 }
 
 .footer-inner {
@@ -285,7 +302,7 @@ footer {
     margin-top: var(--space-sm);
 }
 
-/* Responsive Mobile Design */
+/* Mobile */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
