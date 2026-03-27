@@ -48,7 +48,18 @@
                 <a href="#service" class="btn">Check our services</a>
 
                 <article>
-                    <h3>Key Services</h3>
+                    <h3>About US</h3>
+                    <p>Hello and welcome to ImpactReach Digital!
+
+We prioritize you and your work, by helping you make a website for your non-profit organization. You are the key to our success! So, lets start,
+
+Our mission is:
+ImpactReach Digital is a non-profit internet marketing dedicated to helping mission-driven organizations reach more people, raise more support, and create more impact. We provide ethical, data-driven PPC management, SEO, AIEO, web design & development, and hosting services at significantly reduced rates so that non-profits can invest more of their resources where it matters most: their communities and causes.
+
+So what is “non profit only”?
+Non-profit only means that we are a business that helps organize for the purpose other than generating profit for owners or shareholders. Think of organizations like schools, hospitals, charitables, or any religious means. 
+
+We have an easy page for contacts. If you need something fixed, or have questions, or want to schedule an appointment, you can email us and we will respond to you as fast as we can or as soon as possible. If you need anything urgent, you can use our phone number provided on the website for you to use.</p>
 
                 </article>
             </section>
@@ -120,22 +131,74 @@
                     <input type="email" id="email" name="email" required aria-required="true">
 
                     <label for="OrganizationURL">Organizaiton URL</label>
-                    <input type="text" id="url" name="url">
+                    <input type="text" id="OrganizationURLl">
 
                     <label for="OrganizationType">Organizaiton Type</label>
-                    <input type="dropdown" id="type" name="type">
+                    <select id="OrganizationType" name="OrganizationType">
+                        <option>Education</option>
+                        <option>Healht</option>
+                        <option>Enviroment</option>
+                        <option>Arts</option>
+                        <option>Human Services</option>
+                        <option>Other</option>
+                    </select>
 
-                    <label for="PrimaryNeeds">Primary Needs</label>
-                    <input type="checkbox" id="needs" name="needs">
+    <fieldset>
+        <legend>Primary Need</legend>
+        <ul>
+            <li>
+                <label for="PPC">
+                    <input type="checkbox" id="PPC" name="need" value="PPC">
+                    PPC
+                </label>
+            </li>
+            <li>
+                <label for="SEO">
+                    <input type="checkbox" id="SEO" name="need" value="SEO">
+                    SEO
+                </label>
+            </li>
+            <li>
+                <label for="AIEO">
+                    <input type="checkbox" id="AIEO" name="need" value="AIEO">
+                    AIEO
+                </label>
+            </li>
+            <li>
+                <label for="Web Desing">
+                    <input type="checkbox" id="Web Desing" name="need" value="Web Desing">
+                    Web Design
+                </label>
+            </li>
+            <li>
+                <label for="Other"
+                    <input type="checkbox" id="Other" name="need" value="Web Desing">
+                    Other
+                </label>
+            </li>
+
+        </ul>
+    </fieldset>
 
                     <label for="hearing">How did you hear about us? *</label>
-                    <input type="dropdown" id="hear" name="hear" required aria-required="true">
+                    <select id="hearing" name="hearing" required aria-required="true">
+                        <option>Search Engine</option>
+                        <option>Social Media</option>
+                        <option>Referral</option>
+                        <option>Event or Workshop</option>
+                        <option>Other</option>
+                    </select>
 
                     <label for="MarketingBudget">Montly Marketing Buget Range</label>
-                    <input type="dropdown" id="Budget" name="Budget">
+                    <select id="MarketingBudget" name="MarketingBudget">
+                        <option>0-1000</option>
+                        <option>1000-100000</option>
+                        <option>100000-100000000</option>
+                        <option>10000000+</option>
+                    </select>
 
                     <label for="Message">Message/Goals</label>
-                    <input for="text" id="message" name="message"
+                    <input for="text" id="Message"name="Message">
                     
                     <button type="submit" class="btn">Send Message</button>
                     <p aria-live="polite" class="form-status"></p>
@@ -161,7 +224,6 @@
                 </section>
                 <section class="copyright">
                     <p>&copy; 2026 Your Website. ImpactReach Digital</p>
-                    <p><a href="#main">Back to Top</a></p>
                 </section>
             </section>
         </footer>
