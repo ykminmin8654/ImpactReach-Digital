@@ -1,27 +1,105 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full accessible website for ImpactReach Digital">
+    <meta name="keywords" content="non-profit organizaiton business">
         <title>ImpactReach Digital Offical Website</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
+
+    <body>
         <a href="#main" class="skip-link">skip to main content</a>
 
-        <header class="header">
-            <div class="logo">
-                <h1>ImpactReach Digital</h1>
-            </div>
+        <header>
+            <section class="header">
+                <div class="logo">
+                    <h1>ImpactReach Digital</h1>
+                </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#service">Services & Pricing</a></li>
-                    <li><a href="#impact">Impact Stories</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#mockup">Mockup</a></li>
-                    <li><a href="#cite">Citations</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services & Pricing</a></li>
+                        <li><a href="#impact">Impact Stories</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#mockup">Mockup</a></li>
+                        <li><a href="#cite">Citations</a></li>
+                    </ul>
+                </nav>
+
+                <button class="menu-toggle" aria-label="Toggle main menu">☰</button>
+            </section>
         </header>
 
+        <main id="main">
+            <section id="home" class="hero" aria-labelledby="hero-title">
+                <h2 id="hero-title">Main</h2>
+                <p>"Amplifying Non-Profit Imapct in a Digital-First Word</p>
+                <a href="#service" class="btn">Check our services</a>
 
+                <div class="banner-container">
+                    <div class="banner-slide active">
+                        <div class="banner-content">
+                            <h2>Building the Future Together</h2>
+                            <p>Join our new community of innovators creating meaningful projects and developing real-world skills</p>
+                        </div>
+                    </div>
+                
+                    <div class="banner-slide">
+                        <div class="banner-content">
+                            <h2>Hands-On Learning</h2>
+                            <p>Gain practical experience while building projects that matter with our growing community</p>
+                        </div>
+                    </div>
+                
+                    <div class="banner-slide">
+                        <div class="banner-content">
+                            <h2>Shape Your Journey</h2>
+                            <p>Collaborate with fellow creators to develop solutions and build your experience from the ground up</p>
+                        </div>
+                    </div>
+                
+                    <div class="banner-controls">
+                        <button class="banner-prev">‹</button>
+                        <button class="banner-next">›</button>
+                    </div>
+                
+                 <div class="banner-dots">
+                        <button class="dot active" data-slide="0"></button>
+                        <button class="dot" data-slide="1"></button>
+                        <button class="dot" data-slide="2"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" aria-labelledby="about-title">
+                <h2 id="about-us">About</h2>
+                <p>ImpactReach Digital is a non-profit internet marketing agency dedicated to helping mission-driven organizaitons reach more people, raise more support, and create more impact. We proivde ethica, data-driven PPC management, SEO, AIEO, web design & development, and hosting services at significantly reduced rates so that non-profit can invest more of their resources where it matters most: their communites and causes.</p>
+            </section>
+
+            <section>
+                <article>
+                    <h3>PPC</h3>
+                    <p><strong>Pay-Per-Click:</strong> We offer PPC services for services. Expand your company by advertising with us! We charge $0.01 per click.</p>
+                </article>
+
+                <article>
+                    <h3>SEO</h3>
+                    <p><strong>Search Engine Optimization:</strong> We offer SEO services for your webiste. 1 hour of work is $24 and will improve website presentaiton and increase your website visibility</p>
+                </article>
+
+                <article>
+                    <h3>Web Design & Development</h3>
+                    <p><strong>Web Design & Development:</strong> We will design your company website for $100. We make many differnt styles and types with your input at each step!</p>
+                </article>
+
+                <article>
+                    <h3>Hosting</h3>
+                    <p><strong>Hoasting:</strong> We will host your domain and website. Prices vary based on domain names and avalability. Check out our selection!</p>
+                </article>
+            </section>
+
+        </main>
     </body>
